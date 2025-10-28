@@ -55,6 +55,17 @@ The theme uses a carefully selected color palette:
   - Variables: `#ffd395` (Light orange)
   - Comments: `#7f8d9f` (Muted gray)
 
+## Publishing
+
+To publish this extension to the Zed extension registry:
+
+1. Fork the [zed-industries/extensions](https://github.com/zed-industries/extensions) repository
+2. Add this extension as a submodule in your fork
+3. Update the `extensions.toml` file
+4. Open a PR to the official repository
+
+For detailed instructions, see the [DEVELOPMENT](./DEVELOPMENT) file or the [official Zed extension documentation](https://zed.dev/docs/extensions/developing-extensions).
+
 ## License
 
 MIT

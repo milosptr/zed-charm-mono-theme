@@ -12,9 +12,52 @@ When you modify the theme, Zed will reload the theme automatically.
 
 After you finish the development, you can copy the `charm-mono.json` contents to this project.
 
-## Release Extension
+## Publishing Your Extension
 
-1. Update version in `extension.toml`.
-2. Create a tag with the version number (e.g., `v0.1.0`).
-3. Push the tag to the repository, then the GitHub Actions will make PR to [Zed extensions](https://github.com/zed-industries/extensions).
-4. Wait for the PR to be merged, then the new version will be released.
+To publish your extension to the Zed extension registry, follow these steps:
+
+1. **Ensure you have a valid license**: Your extension repository must include a license file (MIT, Apache 2.0, BSD 3-Clause, or GNU GPLv3) at the root of the repository.
+
+2. **Fork the official extensions repository**:
+   ```bash
+   # Fork https://github.com/zed-industries/extensions to your personal GitHub account
+   git clone https://github.com/YOUR-USERNAME/extensions
+   cd extensions
+   git submodule init
+   git submodule update
+   ```
+
+3. **Add your extension as a submodule**:
+   ```bash
+   git submodule add https://github.com/milosptr/zed-charm-mono-theme.git extensions/charm-mono
+   git add extensions/charm-mono
+   ```
+
+4. **Update `extensions.toml`**:
+   Add your extension to the top of the `extensions.toml` file:
+   ```toml
+   [charm-mono]
+   submodule = "extensions/charm-mono"
+   version = "0.1.0"
+   ```
+
+5. **Sort the files**:
+   ```bash
+   pnpm sort-extensions
+   ```
+
+6. **Create a Pull Request** to `zed-industries/extensions` with your changes.
+
+7. Once your PR is merged, the extension will be automatically packaged and published to the Zed extension registry.
+
+## Updating Your Extension
+
+To update your extension:
+
+1. Update the version in your extension's `extension.toml`
+2. Commit and push to your extension repository
+3. Open a new PR to `zed-industries/extensions`:
+   - Update the submodule to point to the new commit
+   - Update the `version` field in `extensions.toml` to match
+
+For more details, see the [official Zed extension development documentation](https://zed.dev/docs/extensions/developing-extensions).
