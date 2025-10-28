@@ -97,7 +97,11 @@
         "ghost_element.hover": "#5d6a7dff",
         "ghost_element.disabled": "#333e4fff",
         "ghost_element.selected": "#1f2939ff",
-        "accents": ["#a87ffbff", "#603bceff", "#b895fdff"],
+        "accents": [
+          "#a87ffbff",
+          "#603bceff",
+          "#b895fdff"
+        ],
         "syntax": {
           "comment": {
             "color": "#7f8d9fff"
@@ -126,6 +130,9 @@
           "variable": {
             "color": "#ffd395ff"
           },
+          "tag": {
+            "color": "#ffd395ff"
+          },
           "regexp": {
             "color": "#77d5a3ff"
           },
@@ -137,8 +144,144 @@
           },
           "invalid": {
             "color": "#fc8f8eff"
+          },
+          "text.literal": {
+            "color": null,
+            "font_style": null,
+            "font_weight": null
+          },
+          "variable.special": {
+            "color": "#92a9ffff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "variant": {
+            "color": null,
+            "font_style": null,
+            "font_weight": null
+          },
+          "type.builtin": {
+            "color": null,
+            "font_style": null,
+            "font_weight": null
+          },
+          "title": {
+            "color": null,
+            "font_style": null,
+            "font_weight": null
+          },
+          "string.special.symbol": {
+            "color": null,
+            "font_style": null,
+            "font_weight": null
+          },
+          "string.special": {
+            "color": null,
+            "font_style": null,
+            "font_weight": null
+          },
+          "string.regex": {
+            "color": null,
+            "font_style": null,
+            "font_weight": null
+          },
+          "punctuation.special": {
+            "color": null,
+            "font_style": null,
+            "font_weight": null
+          },
+          "punctuation.list_marker": {
+            "color": null,
+            "font_style": null,
+            "font_weight": null
+          },
+          "punctuation.delimiter": {
+            "color": null,
+            "font_style": null,
+            "font_weight": null
+          },
+          "punctuation.bracket": {
+            "color": null,
+            "font_style": null,
+            "font_weight": null
+          },
+          "primary": {
+            "color": null,
+            "font_style": null,
+            "font_weight": null
+          },
+          "preproc": {
+            "color": null,
+            "font_style": null,
+            "font_weight": null
+          },
+          "predictive": {
+            "color": null,
+            "font_style": null,
+            "font_weight": null
+          },
+          "operator": {
+            "color": null,
+            "font_style": null,
+            "font_weight": null
+          },
+          "link_uri": {
+            "color": null,
+            "font_style": null,
+            "font_weight": null
+          },
+          "link_text": {
+            "color": null,
+            "font_style": null,
+            "font_weight": null
+          },
+          "label": {
+            "color": null,
+            "font_style": null,
+            "font_weight": null
+          },
+          "hint": {
+            "color": null,
+            "font_style": null,
+            "font_weight": null
+          },
+          "function.special.definition": {
+            "color": null,
+            "font_style": null,
+            "font_weight": null
+          },
+          "function.method": {
+            "color": null,
+            "font_style": null,
+            "font_weight": null
+          },
+          "enum": {
+            "color": null,
+            "font_style": null,
+            "font_weight": null
+          },
+          "emphasis.strong": {
+            "color": null,
+            "font_style": null,
+            "font_weight": null
+          },
+          "emphasis": {
+            "color": null,
+            "font_style": null,
+            "font_weight": null
+          },
+          "comment.doc": {
+            "color": null,
+            "font_style": null,
+            "font_weight": null
+          },
+          "attribute": {
+            "color": "#92a9ffff",
+            "font_style": null,
+            "font_weight": null
           }
-        }
+        },
+        "players": []
       }
     }
   ]
